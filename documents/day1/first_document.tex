@@ -109,18 +109,20 @@ In real life, you would like to have it as a standalone image like this one:
   \includegraphics[width = .8\textwidth]{figures/ragondin_small.jpg}
 \end{center}
 
+\begin{figure}[hb]
+  \begin{center}
+    \includegraphics[width = .8\textwidth]{figures/ragondin_small.jpg}
+  \end{center}
+  \caption{Here we have a figure with a caption in a floating environment.
+    \blindtext[1]}
+  \label{fig:ragondin_explained}
+\end{figure}
+
 \noindent An here we go again.
 We can embed images in the text this way.
 The Fig. \ref{fig:ragondin_explained} shows how to make a figure in \LaTeX .
 
-\begin{figure}[hb]
-  \begin{center}
-    \includegraphics[width = .8\textwidth]{figures/ragondin_small.jpg}
-    \caption{Here we have a figure with a caption in a floating environment.
-      \blindtext[1]}
-    \label{fig:ragondin_explained}
-  \end{center}
-\end{figure}
+
 
 
 \blindtext[4]
