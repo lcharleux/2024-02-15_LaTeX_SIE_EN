@@ -6,7 +6,10 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{blindtext} % generates text for document filling purposes
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage[math]{blindtext} % generates text for document filling purposes
+\usepackage{lipsum}
 \usepackage[left=4cm,right=4cm,top=2cm,bottom=2cm]{geometry}
 % DOCUMENT SETUP
 \author{Ludovic Charleux}
@@ -108,20 +111,58 @@ In real life, you would like to have it as a standalone image like this one:
 
 \noindent An here we go again.
 We can embed images in the text this way.
+The Fig. \ref{fig:ragondin_explained} shows how to make a figure in \LaTeX .
 
-\begin{figure}
+\begin{figure}[hb]
   \begin{center}
     \includegraphics[width = .8\textwidth]{figures/ragondin_small.jpg}
     \caption{Here we have a figure with a caption in a floating environment.
       \blindtext[1]}
+    \label{fig:ragondin_explained}
   \end{center}
 \end{figure}
 
 
-
 \blindtext[4]
 
+\section{Tabulars and tables}
 
+A table is simple, at least at the beginning.
+
+\begin{center}
+  \begin{tabular}{l|cr} % c = centerd, r = flush right, l = flush left
+    \hline % Horizontal line
+    Animal & Hase fur ? \\
+    Rabbit & Yes        \\
+    Turtle & No         \\
+    \hline
+  \end{tabular}
+\end{center}
+
+The same table with \url{https://www.tablesgenerator.com/}: % \includepackage{hyperref}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+%\begin{table}[]
+\begin{center}
+  \begin{tabular}{@{}lcr@{}}
+    \toprule
+    \textbf{Animal} & \textbf{Has Fur ?} & \textbf{Will bite me ?} \\ \midrule
+    Rabbit          & Yes                & No                      \\
+    Turltle         & No                 & It depends              \\ \bottomrule
+  \end{tabular}
+\end{center}
+%\end{table}
+
+
+\section{Bibliography}
+
+I can cite \cite{hawking1974black} documents like this.
+Or this one also \cite{belczynski2012missing}.
+
+% BIBLIOGRAPY
+\bibliographystyle{plain}
+\bibliography{my_bibliography.bib}
 
 
 \end{document}
