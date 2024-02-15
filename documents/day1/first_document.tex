@@ -9,20 +9,90 @@
 \usepackage[left=4cm,right=4cm,top=2cm,bottom=2cm]{geometry}
 % DOCUMENT SETUP
 \author{Ludovic Charleux}
-\title{My first document}
+\title{\textsc{My first document}}
 \date{Feb. 15th 2024}
 % DOCUMENT
 \begin{document}
 \maketitle
 
-This is our first document. 
-We are so proud of it. 
+\tableofcontents
+
+\section{Introduction to \LaTeX}
+This is our first document.
+We are so proud of it.
 It deals about \LaTeX and writing stuff with it.
 I need to write some more text here to show you some new ideas.
 Again, I write useless stuff to populate our document.
 I'm so happy !
 
-This is a new paragraph. 
+\subsection{Sectionning documents is fun}
+This is a new paragraph.
 I have new stuff to say !
+
+\subsection{Oh yes}
+Again, I'm writing text.
+\textbf{I like bold fonts.} % \textbf is for bold fonts.
+\textit{And italics as well !} % \textit is for italics fonts
+
+\section{Useful environments}
+
+\subsection{Buletted lists and enumerations}
+
+\begin{itemize}
+  \item On thing.
+  \item Another thing.
+        \begin{enumerate}
+          \item Ah yes, I can enumerate !
+          \item And environments can be nested !
+        \end{enumerate}
+  \item Again, a bullet.
+\end{itemize}
+
+\section{Using maths in \LaTeX}
+
+One basic way to write math in \LaTeX~ is to make standalone like this one:
+
+$$
+  f(x) = x^2
+$$
+
+\noindent And here, I can write text again.
+Here is a more advanced example:
+
+\begin{equation}
+  u = \sum_{n=1}^{+\infty} v_n
+  \label{eq:awesome_math}
+\end{equation}
+
+\noindent After the awesome Eq. \ref{eq:awesome_math}, it's possible to write equations inside the text because $\alpha = 5$ and this is because of the famous equation $x = \frac{2}{3}$.
+As you can see, it is possible to put inline math.
+Of course, there are advanced environments for things you will use in math like aligning equations:
+
+\begin{align}
+  A & = (a+b)^2        & + (a+b)(a-b)\nonumber \\
+    & = a^2 + 2ab +b^2 & + a^2 - b^2
+\end{align}
+
+\noindent Underbraces are nice also:
+
+\begin{equation}
+  A = \underbrace{(a+b)^2}_{a^2 + 2ab +b^2}
+  + \underbrace{(a+b)(a-b)}_{a^2 - b^2}
+\end{equation}
+
+\nonumber And matrices as well:
+
+\begin{align}
+  \vec w & = \vec u \cdot \vec v         \\
+         & =
+  \begin{bmatrix}
+    x_u & y_u & z_u
+  \end{bmatrix}
+  \cdot
+  \begin{bmatrix}
+    x_v \\ y_v \\ z_v
+  \end{bmatrix}              \\
+         & = x_u x_v + y_u y_v + z_u z_v
+\end{align}
 
 \end{document}
