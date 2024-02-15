@@ -6,6 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{blindtext} % generates text for document filling purposes
 \usepackage[left=4cm,right=4cm,top=2cm,bottom=2cm]{geometry}
 % DOCUMENT SETUP
 \author{Ludovic Charleux}
@@ -94,6 +95,32 @@ Of course, there are advanced environments for things you will use in math like 
   \end{bmatrix}              \\
          & = x_u x_v + y_u y_v + z_u z_v
 \end{align}
+
+
+\section{Managing figures}
+
+In \LaTeX, with the \textit{graphicx} package, we can include images like this \includegraphics[width = 0.5cm]{figures/ragondin_small.jpg}.
+In real life, you would like to have it as a standalone image like this one:
+
+\begin{center}
+  \includegraphics[width = .8\textwidth]{figures/ragondin_small.jpg}
+\end{center}
+
+\noindent An here we go again.
+We can embed images in the text this way.
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width = .8\textwidth]{figures/ragondin_small.jpg}
+    \caption{Here we have a figure with a caption in a floating environment.
+      \blindtext[1]}
+  \end{center}
+\end{figure}
+
+
+
+\blindtext[4]
+
 
 
 
