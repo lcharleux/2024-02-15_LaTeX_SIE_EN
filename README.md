@@ -42,5 +42,5 @@ $\LaTeX$ is an open source (and therefore free) tool that allows to produce high
 ```bash
 conda create -n latex_python
 conda activate latex_python
-conda install numpy pandas matpotlib
+conda install numpy pandas matpotlib ipython
 ```
