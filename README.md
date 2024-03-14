@@ -35,3 +35,12 @@ $\LaTeX$ is an open source (and therefore free) tool that allows to produce high
 - [ ] Managing your supervisors/colleagues with GIT
 - [ ] Slides with Beamer
 - [ ] Posters with BAposter (option)
+
+
+## Python environement
+
+```bash
+conda create -n latex_python
+conda activate latex_python
+conda install numpy pandas matpotlib
+```
