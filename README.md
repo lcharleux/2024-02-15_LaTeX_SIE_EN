@@ -8,14 +8,14 @@ $\LaTeX$ is an open source (and therefore free) tool that allows to produce high
 
 ## Half-day module schedule
 
-* Morning: introduction and first steps 
+* Session 1: introduction and first steps 
   
   1. Round table discussion.
   1. Setting up on your personal computers. Writing a first document.
   1. Basic structure of a document.
   1. Elementary bricks: sectioning, enumerations, tables, figures, floating objects, math, biblio, references, table of contents, essential packages.
 
-* Afternoon: Structure of a text document. Examination of some specific elements
+* Session 2: Structure of a text document. Examination of some specific elements
     
   1. Document classes.
   1. Use of GIT for versioning and collaboration.
@@ -25,12 +25,12 @@ $\LaTeX$ is an open source (and therefore free) tool that allows to produce high
 
 ## Task list
 
-- [ ] First article
-- [ ] Segmentation
-- [ ] Maths
-- [ ] Floats
-- [ ] Tables
-- [ ] Bibliography
+- [x] First article
+- [x] Segmentation
+- [x] Maths
+- [x] Floats
+- [x] Tables
+- [x] Bibliography
 - [ ] Other classes (`thesis`, `elsarticle`, ...)
 - [ ] Managing your supervisors/colleagues with GIT
 - [ ] Slides with Beamer
