@@ -39,6 +39,8 @@ $\LaTeX$ is an open source (and therefore free) tool that allows to produce high
 
 ## Python environement
 
+To create a virtual environment using Conda, you can use the following commands. Copy and paste them in your terminal.
+
 ```bash
 conda create -y -n latex_python
 conda activate latex_python
