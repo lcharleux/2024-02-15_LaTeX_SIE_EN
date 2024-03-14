@@ -41,3 +41,5 @@ article/article.pdf
 *.toc
 *.nav
 *.snm
+documents/day2/big_document/data/data.csv
+documents/day2/big_document/figures/fig1.png
